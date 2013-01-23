@@ -1,0 +1,224 @@
+/*general*/
+@font-face {
+    font-family: "Andalus";
+	src: url("../font/Andalus/2.ttf");
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+	
+article{
+	margin-left: 50px;
+}
+	
+body{	 	
+	background-color: rgb(215, 215, 215);	
+	color: rgb(0, 0, 0);
+	margin: 0 auto;		
+	margin-top: 0px;		
+	width: 1000px;		
+	behavior: url(htc/PIE.htc);
+}
+	
+footer{	
+	clear:both;	
+	font-family: Arial;
+	font-size: 10px;
+	font-style: italic;
+	text-align: right;
+
+}	
+
+footer img{
+	border: 0px solid; 
+	height: 13px;
+	width: 100px; 	
+}
+
+header{ 	
+	background-color: rgb(255, 255, 255);	
+}
+
+nav, section{
+	background-color: rgb(246, 246, 246);	
+}
+	
+section {		
+	border-radius: 0px 0px 15px 15px;	
+	box-shadow: 8px 3px 5px 3px #aaa; 	
+	behavior: url(htc/PIE.htc);
+}	
+		
+#logo{
+	border: 0px solid; 
+	height: 149px;
+	width: 300px; 	
+}
+
+.boton{	 
+	border: 0px solid;
+	height: 30px;
+	margin:0; 
+	padding:0; 	
+	width: 200px; 
+}
+/************************************************/	
+/*index*/
+#cuerpo{	
+	behavior: url(htc/PIE.htc);	
+	border-radius: 0px 0px 15px 15px;		
+}
+	
+#instituciones{
+	font-size:16px;
+	height: 600pt;		
+}
+
+#inst_index{
+	float: right;
+	height: 600px;	
+	text-align:center;	
+	width: 320px;			
+}
+
+#section_index{
+	background: url(../imagenes/logo_fondo_transparente.png);	
+	background-color: rgb(246, 246, 246);	
+	background-position: 50% 50%;
+	behavior: url(htc/PIE.htc);
+}
+
+.institucion{
+	box-shadow: 0px 3px 5px 3px #aaa; 	
+	font-family: Calibri, Arial;
+	font-style:italic;
+	height:170px;
+	width:240px;
+	behavior: url(htc/PIE.htc);	
+}
+
+.logo_inst{
+	border: 0px solid ; 
+	width: 200px;
+}
+	
+.text{
+	font-family: Calibri, Arial;	
+	text-align: justify;	
+}
+
+.title{	 
+	font-family: Calibri, Arial;
+	font-size:20px;
+	font-weight: bold;
+	/*text-shadow: rgb(215, 215, 215) 5px 5px;*/
+	behavior: url(htc/PIE.htc);	
+}
+/************************************************/
+/*instituciones*/
+.linea1Inst{		
+	height:200px;
+	width: 380px;
+}
+
+.linea2Inst, .linea3Inst{
+	height:170px;
+	width: 250px;
+}
+
+.linea2InstGrande{
+	height:220px;
+	width: 440px;
+}
+
+.linea1Inst,.linea2Inst, .linea3Inst, .linea2InstGrande{
+	border-radius:15px;	
+	box-shadow: 0px 3px 5px 3px #aaa; 
+	display: inline-block;		
+	color: #71b56b;
+	font-family: Calibri;
+	font-weight: bold;
+	margin-left:15px;
+	margin-right:15px;	
+	behavior: url(htc/PIE.htc);
+}
+
+.linea3Inst a, .linea2Inst a{
+	display: table-cell;
+	vertical-align: middle;
+}
+/************************************************/
+/*agenda*/
+#agenda{
+	box-shadow: 8px 8px 5px #aaa;
+	behavior: url(htc/PIE.htc);
+}
+
+#cabTabla{	
+	background: url(../imagenes/fondo_tabla.png);
+	color:#ffffff;
+	font-family: Calibri, Arial;
+	font-size:3;
+	font-weight: bold;	
+	text-align: center;
+}
+
+.desc{
+	background-color: rgb(215, 215, 215);
+	padding: 0px 0px 0px 10px;
+	text-align: left;		
+}
+
+.mes{
+	background-color: rgb(215, 215, 215);
+	font-weight: bold;		
+	text-align: center;
+}
+
+.year{
+	background-color:#71b56b;
+	color: #fff;
+	font-size:50px;
+	font-weight: bold;
+	text-align: center;	
+}
+
+.year, .mes, .desc{
+	border: 1px solid #fff;	
+	font-family: Calibri, Arial;
+	vertical-align: middle; 	
+}
+/************************************************/
+/*contacto*/
+#facebook{
+	vertical-align: top;
+}
+
+#facebook img{
+	border: 0px solid; 
+	box-shadow: 8px 8px 5px #aaa;
+	height: 325px;		
+	width: 100px; 		
+	behavior: url(htc/PIE.htc);
+}
+
+#formulario, #facebook{
+	display: inline-block;
+	width: 450px;	
+	behavior: url(htc/PIE.htc);
+}
+
+.campoForm{
+	width: 320px;
+}
+
+.textoForm{
+	text-align: right; 
+	font-family: Calibri, Arial;
+}
+/************************************************/

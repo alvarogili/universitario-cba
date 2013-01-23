@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Universitario CBA - Contacto</title>
+        <link rel="shortcut icon" href="imagenes/ucba.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script src="js/prefixfree.min.js"></script>
+		<script language="javascript" type="text/javascript"> 
+			//busca caracteres que no sean espacio en blanco en una cadena 
+			function vacio(q) { 
+				for ( i = 0; i < q.length; i++ ) { 
+					if ( q.charAt(i) != " " ) { 
+						return true 
+					} 
+				 } 
+				return false 
+			} 
+
+			//valida que los campos no esten vacios y no tengan solo espacios en blanco 
+			function checkFields(F) { 
+				if( vacio(F.nombre.value) == false ||
+				vacio(F.apellido.value) == false ||
+				vacio(F.mail.value) == false ||
+				vacio(F.mensaje.value) == false) { 
+					alert('Los campos marcados con (*) son obligatorios.\n\nPor favor asegurese de completarlos correctamente\npara que podamos contactarlo.\nMuchas gracias.');
+					return false 
+				} 
+				else { 
+					return true
+				} 
+			} 
+		</script>
+        <!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->        
+    </head>
+    <body>  	    
+	    <section id="section">
+		    <header>
+		    	<center>
+		    		<a href="index.html">
+		    			<img id="logo" src="imagenes/logo.png" />
+		            </a>
+		        </center>
+		    </header> 
+		    <nav>
+		    	<a href="index.html"><img src="imagenes/inicio.png" class="boton"/></a><a href="instituciones.html" 
+		    	><img src="imagenes/instituciones.png" class="boton"/></a><a href="agenda.html" 
+		    	><img src="imagenes/agenda.png" class="boton"/></a><a href="fotos.html"
+		    	><img src="imagenes/fotos.png" class="boton" /></a><a href="contacto.html" 
+		    	><img src="imagenes/contactoSel.png" class="boton"/></a>
+		    </nav>		
+	    	<article id="art_contacto">		    	
+		        <div id="formulario">	
+					<big>
+						<span class="title">
+							<br>
+							Para contactárnos, envianos un mensaje:<br>
+							<br>
+						</span>
+					</big>		    	
+					<br>
+			    	<form id="contacto" method="post" onsubmit="return checkFields(this);" action="enviar.php">
+						<table style="text-align: left; height: 400px; width: 323px;" border="0" cellpadding="2" cellspacing="2">
+							<tbody>
+								<tr>
+									<td class="textoForm">Nombre*:</td>
+									<td><input class="campoForm" tabindex="1" name="nombre" id="nombre" /></td>
+								</tr>
+								<tr>
+									<td class="textoForm">Apellido*:</td>
+									<td><input class="campoForm" tabindex="2" name="apellido" id="apellido" /></td>
+								</tr>
+								<tr>
+									<td class="textoForm">Teléfono:</td>
+									<td><input class="campoForm" tabindex="3" name="telefono" id="telefono" /></td>
+								</tr>
+								<tr>
+									<td class="textoForm">Localidad:</td>
+									<td><input class="campoForm" tabindex="4" name="localidad" id="localidad" /></td>
+								</tr>
+								<tr>
+									<td class="textoForm">E-mail*:</td>
+									<td><input class="campoForm" tabindex="5" name="mail" id="mail" /></td>
+								</tr>
+								<tr>
+									<td class="textoForm">Mensaje*:</td>
+									<td><textarea name="mensaje" id="mensaje" rows="8" class="campoForm" tabindex="6"></textarea></td>
+								</tr>
+								<tr>
+									<td><br>
+									</td>
+									<td style="text-align: right;"><input name="Submit" value="    Enviar    " type="submit" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+					</form>
+            	</div>
+				<div id="facebook">	
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<center>
+						<a href="http://www.facebook.com/pages/Universitario-Cba/211258415587899" target="_blank">
+							<img src="imagenes/buscanosEnFacebook.jpg" alt="">
+						</a>
+					</center>
+				</div>
+	            <br/>
+	            <br/>
+            </article>            
+	    </section> 	    	       
+ 		<footer>
+ 		    <br>
+			Diseño&nbsp;	        
+			<a href="http://alvarogili.com.ar" target="_blank">
+				<img alt="" src="imagenes/logo_alvaro_gili.png">
+			</a>
+		</footer>
+</body>
+</html>

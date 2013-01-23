@@ -1,0 +1,13 @@
+Página botones:
+
+http://dabuttonfactory.com/
+
+Colores botón verde:
+
+Superior: RGB = 136, 209, 123
+Inferior: RGB = 61, 125, 26
+
+Colores botón azul:
+
+Superior: RGB = 68, 118, 204
+Inferior: RGB = 34, 51, 136
